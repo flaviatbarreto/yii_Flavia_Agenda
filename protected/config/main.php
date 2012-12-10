@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Agenda Telefônica',
+	'name'=>'Flagenda',
 	'defaultController' => 'phonebook/index',
 
 	// preloading 'log' component
