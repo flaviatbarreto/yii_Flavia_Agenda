@@ -29,11 +29,11 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Listar Contatos', 'url'=>array('/phonebook/index', 'view'=>'about')),
+				array('label'=>'Listar Contatos', 'url'=>array('/phonebook/index')),
 				array('label'=>'Adicionar Contato', 'url'=>array('/phonebook/create')),
 				array('label'=>'Gerenciar Contatos', 'url'=>array('/phonebook/admin')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Login', 'url'=>array('/userGroups'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/userGroups/user/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->

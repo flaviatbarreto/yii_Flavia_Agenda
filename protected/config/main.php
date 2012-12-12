@@ -21,7 +21,10 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+		'userGroups'=>array(
+	        'accessCode'=>'flavia',
+	        'salt'=>'FLA123sdfkjsldfgklsdklf98',
+	    ),
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'flavia',
@@ -36,9 +39,10 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class'=>'userGroups.components.WebUserGroups',
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -46,8 +50,9 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+			'showScriptName'=>false,
 		),
-		*/
+		
 		/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -88,6 +93,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'flaviatbarreto@gmail.com',
 	),
 );
